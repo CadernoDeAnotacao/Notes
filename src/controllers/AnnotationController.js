@@ -35,7 +35,7 @@ module.exports = {
         return response.json(annotationDeleted)
     }
 
-    return responde.status(401).json({error: "Não foi encontrado o registro"})
+    return response.status(401).json({error: "Não foi encontrado o registro"})
     }
 }
 
