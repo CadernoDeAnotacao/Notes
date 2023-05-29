@@ -5,7 +5,7 @@ module.exports = {
 
     async update(request, response){
         const { id } = request.params;
-        const { notes, } = request.body;
+        const { notes } = request.body;
 
         const annotation = await Annotations.findOne({ _id: id})
 
